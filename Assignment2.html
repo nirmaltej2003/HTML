@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Interface</title>
+    <style>
+        #parent1,#parent2,#parent3,#parent4,#parent5{
+            border:2px solid black;
+            height:100px;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border: none;
+        }
+        .child1,.child2,.child3,.child4,.child5,.child6,.child7,.child8,.child9,.child200,.child210,.child220,.child300,.child310,.child320{
+            border:1.5px solid black;
+            height:70px;
+            width: 30%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .child11,.child21,.child31,.child41,.child51,.child61,.child71,.child81,.child91,.child2001,.child2101,.child2201,.child3001,.child3101,.child3201{
+            border:1.5px solid black;
+            height:30px;
+            width:55%;
+            border:none;   
+        }
+        .child12{
+            background-image: url("https://www.benefits.chat/img/bvn%20safe.png");
+            background-size:30% 45px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border:1.5px solid black;
+            height:30px;
+            width: 35%;
+            border: none;
+        }
+        .child22{
+            background-image: url("https://static.gameloop.com/img/4d3a4e213ca74c6e223b8cfbf896e792.png?imageMogr2/thumbnail/172.8x172.8/format/webp");
+            background-size:30% 45px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border:1.5px solid black;
+            height:30px;
+            width: 35%;
+            border: none;
+        }
+        .child32{
+            background-image: url("https://www.cisco.com/c/m/en_sg/products/security/email-security/setup-guide/jcr:content/Grid/category_atl_copy_co/layout-category-atl/blade_352681430_copy_523606239/bladeContents/quarters/Q-Quarter-4/tile.img.png/1634817443276.png");
+            background-size:30% 45px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border:1.5px solid black;
+            height:30px;
+            width: 35%;
+            border: none;
+        }
+        .a{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            align-content: center;
+        }
+        .child42{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiUb5deizyVMt2TpXJy4cpVBzcEhS__MEHdFbU9R5Q7b7iEN9T");
+            background-size:30% 45px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border:1.5px solid black;
+            height:30px;
+            width: 35%;
+            border: none;
+        }
+        .child52{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmqxTY7axwWd1aHbQnzz3I2SiZCSyGOkxQcOD8v-YKdad3bDi5");
+            background-size:30% 45px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border:1.5px solid black;
+            height:30px;
+            width: 35%;
+            border: none;
+        }
+        .child62{
+            background-image: url("https://png.pngtree.com/png-vector/20220718/ourmid/pngtree-round-button-in-blue-and-white-colors-for-search-function-vector-png-image_19145022.jpg");
+            background-size:30% 45px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border:1.5px solid black;
+            height:30px;
+            width: 35%;
+            border: none;
+        }
+        .child72{
+            background-image: url("https://play-lh.googleusercontent.com/Iz93vZfwsenFBwfjNRLJydnJDtlRHKJvC9nqapspos3kOIJegZW-BRfVaCY2FgOjvco=w240-h480-rw");
+            background-size:30% 45px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border:1.5px solid black;
+            height:30px;
+            width: 35%;
+            border: none;
+        }
+        .child82{
+            background-image: url("https://www.benefits.chat/img/bvn%20safe.png");
+            background-size:30% 45px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border:1.5px solid black;
+            height:30px;
+            width: 35%;
+            border: none;
+        }
+        .child92{
+            background-image: url("https://media.licdn.com/dms/image/sync/v2/D4E27AQFsxv2nL0GODw/articleshare-shrink_800/articleshare-shrink_800/0/1718709977061?e=2147483647&v=beta&t=oKpp9dXiFylTPv-GeYbXV8w5wKyI8-cCYgzkQ08VhNk");
+            background-size:30% 45px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border:1.5px solid black;
+            height:30px;
+            width: 35%;
+            border: none;
+        }
+        .child2002{
+            background-image: url("https://media.licdn.com/dms/image/sync/v2/D4E27AQFsxv2nL0GODw/articleshare-shrink_800/articleshare-shrink_800/0/1718709977061?e=2147483647&v=beta&t=oKpp9dXiFylTPv-GeYbXV8w5wKyI8-cCYgzkQ08VhNk");
+            background-size:30% 45px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border:1.5px solid black;
+            height:30px;
+            width: 35%;
+            border: none;
+        }
+        .child2102{
+            background-image: url("https://media.licdn.com/dms/image/sync/v2/D4E27AQFsxv2nL0GODw/articleshare-shrink_800/articleshare-shrink_800/0/1718709977061?e=2147483647&v=beta&t=oKpp9dXiFylTPv-GeYbXV8w5wKyI8-cCYgzkQ08VhNk");
+            background-size:30% 45px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border:1.5px solid black;
+            height:30px;
+            width: 35%;
+            border: none;
+        }
+        .child2202{
+            background-image: url("https://media.licdn.com/dms/image/sync/v2/D4E27AQFsxv2nL0GODw/articleshare-shrink_800/articleshare-shrink_800/0/1718709977061?e=2147483647&v=beta&t=oKpp9dXiFylTPv-GeYbXV8w5wKyI8-cCYgzkQ08VhNk");
+            background-size:30% 45px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border:1.5px solid black;
+            height:30px;
+            width: 35%;
+            border: none;
+        }
+
+        .child3002{
+            background-image: url("https://media.licdn.com/dms/image/sync/v2/D4E27AQFsxv2nL0GODw/articleshare-shrink_800/articleshare-shrink_800/0/1718709977061?e=2147483647&v=beta&t=oKpp9dXiFylTPv-GeYbXV8w5wKyI8-cCYgzkQ08VhNk");
+            background-size:30% 45px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border:1.5px solid black;
+            height:30px;
+            width: 35%;
+            border: none;
+        }
+        .child3102{
+            background-image: url("https://media.licdn.com/dms/image/sync/v2/D4E27AQFsxv2nL0GODw/articleshare-shrink_800/articleshare-shrink_800/0/1718709977061?e=2147483647&v=beta&t=oKpp9dXiFylTPv-GeYbXV8w5wKyI8-cCYgzkQ08VhNk");
+            background-size:30% 45px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border:1.5px solid black;
+            height:30px;
+            width: 35%;
+            border: none;
+        }
+        .child3202{
+            background-image: url("https://media.licdn.com/dms/image/sync/v2/D4E27AQFsxv2nL0GODw/articleshare-shrink_800/articleshare-shrink_800/0/1718709977061?e=2147483647&v=beta&t=oKpp9dXiFylTPv-GeYbXV8w5wKyI8-cCYgzkQ08VhNk");
+            background-size:30% 45px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border:1.5px solid black;
+            height:30px;
+            width: 35%;
+            border: none;
+        }
+        .child1:hover, .child2:hover, .child3:hover, .child4:hover,
+        .child5:hover, .child6:hover, .child7:hover, .child8:hover,
+        .child9:hover, .child200:hover, .child210:hover, .child220:hover,
+        .child300:hover, .child310:hover, .child320:hover {
+            transform: scale(1.05);
+            box-shadow: 4px 4px 15px rgba(0,0,0,0.3);
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent1">
+        <div class="child1">
+            <div class="child11"><h1 class="a">Property Task Status/PayTask</h1></div>
+            <div class="child12"></div>
+        </div>
+        <div class="child2">
+            <div class="child21"><h1 class="a">Property Task Status/CellPhone Tower Calculator</h1></div>
+            <div class="child22"></div>
+        </div>
+        <div class="child3">
+            <div class="child31"><h1 class="a">Property Task Rules/Procedure</h1></div>
+            <div class="child32"></div>
+        </div>
+    </div>
+    <div id="parent2">
+        <div class="child4">
+            <div class="child41"><h1 class="a">Property Task Online Payment Reciept</h1></div>
+            <div class="child42"></div>
+        </div>
+        <div class="child5">
+            <div class="child51"><h1 class="a">Street Rates</h1></div>
+            <div class="child52"></div>
+        </div>
+        <div class="child6">
+            <div class="child61"><h1 class="a">New Bill Number Search</h1></div>
+            <div class="child62"></div>
+        </div>
+    </div>
+    <div id="parent3">
+        <div class="child7">
+            <div class="child71"><h1 class="a">Know Your Zone & Division</h1></div>
+            <div class="child72"></div>
+        </div>
+        <div class="child8">
+            <div class="child81"><h1 class="a">Know Your Application Status</h1></div>
+            <div class="child82"></div>
+        </div>
+        <div class="child9">
+            <div class="child91"><h1 class="a">Contact US</h1></div>
+            <div class="child92"></div>
+        </div>
+    </div>
+    <div id="parent4">
+        <div class="child200">
+            <div class="child2001"><h1 class="a">Mobile Number & Email ID Registration</h1></div>
+            <div class="child2002"></div>
+        </div>
+        <div class="child210">
+            <div class="child2101"><h1 class="a">New Assesment</h1></div>
+            <div class="child2102"></div>
+        </div>
+        <div class="child220">
+            <div class="child2201"><h1 class="a">Name Transfer</h1></div>
+            <div class="child2202"></div>
+        </div>
+    </div>
+    <div id="parent5">
+        <div class="child300">
+            <div class="child3001"><h1 class="a">Sub-Division</h1></div>
+            <div class="child3002"></div>
+        </div>
+        <div class="child310">
+            <div class="child3101"><h1 class="a">Amalgamation</h1></div>
+            <div class="child3102"></div>
+        </div>
+        <div class="child320">
+            <div class="child3201"><h1 class="a">Objection</h1></div>
+            <div class="child3202"></div>
+        </div>
+    </div>
+</body>
+</html>
